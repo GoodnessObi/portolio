@@ -1,13 +1,15 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
+import schemas from './sanity/schemas';
 
 const config = defineConfig({
 	projectId: '',
 	dataset: 'production',
 	title: 'sample-portfolio',
 	apiVersion: '2023-04-11',
-	basePath: process.env.SANITY_DEFAULT_ROUTE,
+	basePath: 'null',
 	plugins: [deskTool()],
+	schema: { types: schemas },
 });
 
 export default config;
