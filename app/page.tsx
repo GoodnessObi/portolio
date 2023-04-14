@@ -28,7 +28,7 @@ export default async function Home() {
 						{project.image && (
 							<Image
 								src={project.image}
-								alt={project.name}
+								alt={project.alt}
 								width={750}
 								height={300}
 								className='object-cover rounded-lg border-gray-500'
