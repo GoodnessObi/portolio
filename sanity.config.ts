@@ -3,11 +3,11 @@ import { deskTool } from 'sanity/desk';
 import schemas from './sanity/schemas';
 
 const config = defineConfig({
-	projectId: '',
+	projectId: 'famc5mr1',
 	dataset: 'production',
 	title: 'sample-portfolio',
 	apiVersion: '2023-04-11',
-	basePath: 'null',
+	basePath: '/admin',
 	plugins: [deskTool()],
 	schema: { types: schemas },
 });

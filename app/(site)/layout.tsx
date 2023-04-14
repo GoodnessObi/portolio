@@ -14,8 +14,6 @@ export default async function RootLayout({
 }) {
 	const pages = await getPages();
 
-	console.log('ppp', pages);
-
 	return (
 		<html lang='en'>
 			<body className='max-w-3xl mx-auto py-10'>
